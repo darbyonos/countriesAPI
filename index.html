@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Country Explorer</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- ================= HEADER ================= -->
+<header class="header">
+<div class="container">
+<h1>
+                Country<span>Explorer</span>
+</h1>
+<p>
+                Discover information about countries around the world.
+            </p>
+</div>
+</header>
+<!-- ================= MAIN ================= -->
+<main class="container">
+<!-- SEARCH -->
+<section class="search-section">
+<form id="searchForm">
+<input autocomplete="off" id="countryInput" placeholder="Search for a country..." type="text" value="Japan"/>
+<button type="submit">
+                    Search
+                </button>
+</form>
+</section>
+<!-- LOADING -->
+<p class="message hidden" id="loading">
+            Searching...
+        </p>
+<!-- ERROR -->
+<p class="message error hidden" id="errorMessage">
+</p>
+<!-- COUNTRY RESULT (Active preview showcasing styling) -->
+<section class="country-result" id="countryResult">
+<div class="country-image">
+<img alt="Country flag" id="countryFlag" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<div class="country-info">
+<p class="label">
+                    COUNTRY
+                </p>
+<h2 id="countryName">
+                    Japan
+                </h2>
+<div class="info-grid">
+<div class="info-box">
+<span>
+                            Capital
+                        </span>
+<strong id="capital">
+                            Tokyo
+                        </strong>
+</div>
+<div class="info-box">
+<span>
+                            Population
+                        </span>
+<strong id="population">
+                            125,800,000
+                        </strong>
+</div>
+<div class="info-box">
+<span>
+                            Region
+                        </span>
+<strong id="region">
+                            Eastern Asia
+                        </strong>
+</div>
+<div class="info-box">
+<span>
+                            Continent
+                        </span>
+<strong id="continent">
+                            Asia
+                        </strong>
+</div>
+<div class="info-box">
+<span>
+                            Currency
+                        </span>
+<strong id="currency">
+                            Japanese yen (¥)
+                        </strong>
+</div>
+<div class="info-box">
+<span>
+                            Languages
+                        </span>
+<strong id="languages">
+                            Japanese
+                        </strong>
+</div>
+</div>
+</div>
+</section>
+<!-- DEFAULT MESSAGE -->
+<p class="welcome hidden" id="welcomeMessage">
+            Search for a country to explore its information.
+        </p>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer>
+<p class="footer p">
+            Country Explorer • Built with HTML, CSS &amp; JavaScript
+        </p>
+        <p>
+            <span style="color:var(--accent-emerald);font-size:10px;">●</span> Crafted by Onoseigho Darby
+            </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
