@@ -5,7 +5,7 @@
 const API_URL =
     "https://api.restcountries.com/countries/v5/name";
 
-const MY_API_KEY = "rc_live_e05c33af0ec14bf385857f789da79fff";
+const MY_API_KEY = "rc_live_8cc3fb4955d14f2e89a9dc662b460cf3";
 
 
 // ========================================
